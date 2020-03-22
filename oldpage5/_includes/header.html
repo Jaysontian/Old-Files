@@ -1,0 +1,13 @@
+<nav>
+	<a class='logo' href='{{site.baseurl}}/index.html'>Jayson Tian</a>
+	<p style='margin-top:-20px;'>@jaezun</p>
+	<div class='social-con'>
+		<a href="https://www.instagram.com/jaezun/?hl=en"><i class="fab fa-instagram"></i></a>
+		<a href="https://www.youtube.com/channel/UCdwsgMvJzdwnKI8WM5kYO5A/"><i class="fab fa-youtube"></i></a>
+		<a href="https://soundcloud.com/picxight-productions"><i class="fab fa-soundcloud"></i></a>
+		<a href="https://github.com/Jaysontian"><i class="fab fa-github"></i></a>
+	</div>
+	{% for page in site.pages %} {% if page.title %}
+		<a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+	{% endif %} {% endfor %}
+</nav>
